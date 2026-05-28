@@ -5,7 +5,7 @@ export class Device {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ unique: true })
+  @Column({ unique: true, nullable: true })
   machine_address: string;
 
   @Column({ nullable: true })
